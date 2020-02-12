@@ -11,7 +11,7 @@ const DateSearch = ({ date, setDate }) => {
       <h2>
         Pick a date!
       </h2>
-      <h4>Pictures every day by NASA since July 16th, 1995.</h4>
+      <h4>Pictures every day from NASA since July 16th, 1995.</h4>
       <DatePicker
         selected={date}
         onChange={setDate}
