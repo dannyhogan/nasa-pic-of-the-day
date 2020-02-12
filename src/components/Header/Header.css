@@ -1,0 +1,7 @@
+.Header {
+  width: 100%;
+  border: 3px solid lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
