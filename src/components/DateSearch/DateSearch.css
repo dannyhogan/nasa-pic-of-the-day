@@ -1,5 +1,18 @@
 .DateSearch {
-  height: 100;
-  border: 2px solid lime;
+  height: 100%;
   width: 50%;
+  background-size: cover;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  .DateSearch {
+    height: 50%;
+    width: 100%;
+  }
 }
