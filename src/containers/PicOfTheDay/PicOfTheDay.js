@@ -7,7 +7,7 @@ import { getPicture } from '../../services/nasaApi';
 const PicOfTheDay = () => {
 
   const [picture, setPicture] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [date, setDate] = useState(new Date());
 
 
@@ -23,7 +23,7 @@ const PicOfTheDay = () => {
   return (
     <section className="PicOfTheDay">
       <DateSearch date={date} setDate={setDate} />
-      <PictureDisplay picture={picture} loading={loading} />
+      <PictureDisplay picture={picture} loading={loading} date={date} />
     </section>
   )
 };
