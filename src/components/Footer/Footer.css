@@ -5,21 +5,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border: 2px solid green;
 }
 
-h3 {
+.FooterTitle {
   margin: 0;
+  color: black;
 }
 
 .socials {
   width: 15%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+span {
+  color: black;
 }
 
 a:visited, a {
+  padding: 5px;
   font-size: 1rem;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all ease-in .5s;
 }

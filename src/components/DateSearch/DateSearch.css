@@ -7,12 +7,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(84, 84, 84);
+}
+
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.733);
+}
+
+h3 {
+  margin: 0;
+}
+
+.searchHeader {
+  text-align: center;
+  width: 50%;
+  border: 2px solid springgreen;
 }
 
 
 @media screen and (max-width: 800px) {
   .DateSearch {
-    height: 50%;
+    height: 25%;
     width: 100%;
+    flex-direction: row;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .searchHeader {
+    width: 50%;
+    border: 2px solid springgreen;
   }
 }
