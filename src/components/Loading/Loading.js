@@ -5,7 +5,7 @@ import { PulseLoader } from 'react-spinners';
 const Loading = () => {
   return (
     <div className="Loading">
-      <PulseLoader />
+      <PulseLoader color={"#FFFFFF"} />
     </div>
   )
 };
