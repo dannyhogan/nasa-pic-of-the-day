@@ -8,22 +8,28 @@ const PicOfTheDay = () => {
 
   const [picture, setPicture] = useState({});
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [date, setDate] = useState(new Date());
 
 
   useEffect(() => {
     setLoading(true)
+    setError(null)
     getPicture(date)
       .then(picture => {
         setPicture(picture);
         setLoading(false);
       })
+      .catch(err => {
+        setError(err)
+      });
+
   }, [date])
 
   return (
     <section className="PicOfTheDay">
       <DateSearch date={date} setDate={setDate} />
-      <PictureDisplay picture={picture} loading={loading} date={date} />
+      <PictureDisplay picture={picture} loading={loading} error={error} />
     </section>
   )
 };

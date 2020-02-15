@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(84, 84, 84);
+  background-color: rgba(84, 84, 84, 0.452);
 }
 
 
@@ -16,11 +16,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid salmon;
+  width: 50%;
+  height: 100%;
 }
 
-button {
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.733);
+.datePicker {
+  border-radius: 10px;
+  height: 2rem;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+#searchButton span {
+  color: black;
+  font-weight: 700;
+}
+
+#searchButton {
+  width: 90%;
+  height: 30%;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: white;
 }
 
 h3 {

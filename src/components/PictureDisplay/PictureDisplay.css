@@ -3,10 +3,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   overflow-y: scroll;
-  background-image: url('../../assets/stars.png');
   background-size: contain;
   border: 2px solid lime;
 }
@@ -34,10 +33,15 @@
 }
 
 
-figure img, iframe {
+figure img{
+  width: auto;
   height: 90%;
   margin: 0;
   padding: 0;
+}
+
+figure iframe {
+  width: 100%;
 }
 
 .pictureDescription {
