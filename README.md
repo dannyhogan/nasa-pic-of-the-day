@@ -1,5 +1,7 @@
 # Deployed on Netlify: [Live Demo](https://nasa-picture-of-the-day.netlify.com/)
 
+Built in React using hooks, and deployed on netlify!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
