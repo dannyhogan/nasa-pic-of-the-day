@@ -7,20 +7,16 @@
   align-items: center;
   overflow-y: scroll;
   background-size: contain;
-  border: 2px solid lime;
 }
 
 .picture {
   width: 80%;
   height: 50%;
-  border: 2px solid red;
 }
 
 .pictureTitle {
   font-size: 2rem;
   width: 80%;
-  border: 2px solid red;
-  margin: 0;
   padding: 0;
 }
 
@@ -46,8 +42,6 @@ figure iframe {
 
 .pictureDescription {
   width: 80%;
-  border: 2px solid lime;
-
 }
 
 
