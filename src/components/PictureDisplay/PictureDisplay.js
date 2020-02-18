@@ -1,6 +1,7 @@
 import React from 'react';
 import './PictureDisplay.css'
 import Loading from '../Loading/Loading';
+import moment from 'moment';
 
 const PictureDisplay = ({ picture, loading, error }) => {
 
@@ -15,6 +16,7 @@ const PictureDisplay = ({ picture, loading, error }) => {
       <Loading />
     </section>
   );
+  console.log(picture.date);
 
   return (
     <section className="PictureDisplay">
@@ -22,19 +24,15 @@ const PictureDisplay = ({ picture, loading, error }) => {
       <figure className="picture">
 
         <figcaption className="pictureDate">
-          {new Date(picture.date).toLocaleDateString(undefined, {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
+          {moment(picture.date).format('MMM Do, YYYY')}
         </figcaption>
 
-        <a href={picture.url} rel="noopener noreferrer" target="_blank">
+        <a href={picture.url}
+          rel="noopener noreferrer"
+          target="_blank">
           {picture.url.includes('youtube') ?
             <iframe src={picture.url} title={picture.title} /> :
-            <img src={picture.url} alt="NASA Pic of The Day" />
-          }
+            <img src={picture.url} alt="NASA Pic of The Day" />}
         </a>
 
       </figure>

@@ -9,8 +9,7 @@ const PicOfTheDay = () => {
   const [picture, setPicture] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [date, setDate] = useState(new Date());
-
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
 
   useEffect(() => {
     setLoading(true)
