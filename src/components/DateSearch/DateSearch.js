@@ -19,16 +19,18 @@ const DateSearch = ({ date, setDate }) => {
 
   return (
     <section className="DateSearch">
+      <div className="searchContainer">
+        <h2 className="searchHeader">Pick a date between now and July 16th, 1995.</h2>
+        <div className="search">
+          <DatePicker
+            className="datePicker"
+            selected={date}
+            onChange={setDate}
+          />
+          <h3 className="searchH3"> - OR - </h3>
+          <Button type="button" id="searchButton" onClick={getRandomPicture}>Random picture!</Button>
 
-      <h2 className="searchHeader">Pick a date between now and July 16th, 1995.</h2>
-      <div className="search">
-        <DatePicker
-          className="datePicker"
-          selected={date}
-          onChange={setDate}
-        />
-        <h3> - OR - </h3>
-        <Button type="button" id="searchButton" onClick={getRandomPicture}>Get Random Picture!</Button>
+        </div>
       </div>
     </section>
   )
