@@ -3,9 +3,12 @@ import "./PicOfTheDay.css";
 import DateSearch from "../../components/DateSearch/DateSearch";
 import PictureDisplay from "../../components/PictureDisplay/PictureDisplay";
 import { useRequest } from "../../hooks/useRequest";
+import moment from "moment";
 
 const PicOfTheDay = () => {
-  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
+  const currentDate = moment().format("YYYY-MM-DD");
+
+  const [date, setDate] = useState(currentDate);
   const { picture, loading, error } = useRequest(date);
 
   return (
